@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="310.0" prefWidth="319.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emailapp.SignUpController">
+   <children>
+      <TextField fx:id="emailInput" layoutX="84.0" layoutY="139.0" promptText="Email" />
+      <Button fx:id="signupbtn" layoutX="106.0" layoutY="229.0" mnemonicParsing="false" onAction="#onPress" prefHeight="38.0" prefWidth="107.0" style="-fx-background-color: #0D7377;" styleClass="btn" text="Créer compte" textFill="WHITE" />
+      <TextField fx:id="passwordInput" layoutX="84.0" layoutY="187.0" promptText="Password" />
+      <Label layoutX="60.0" layoutY="30.0" text="Creation compte" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nominput" layoutX="84.0" layoutY="89.0" promptText="Nom complet" />
+      <Label fx:id="link" layoutX="131.0" layoutY="278.0" onMouseClicked="#onPressLink" text="Connexion" textFill="WHITE" />
+   </children>
+</AnchorPane>

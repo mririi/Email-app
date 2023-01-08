@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="703.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emailapp.EnvoyerEmailController">
+   <children>
+      <Button fx:id="envoyerbtn" layoutX="543.0" layoutY="456.0" mnemonicParsing="false" onAction="#onClickbtn" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #0D7377;" text="Envoyer un email" textFill="WHITE" />
+      <TextField fx:id="objet" layoutX="141.0" layoutY="178.0" prefHeight="33.0" prefWidth="174.0" promptText="Demande de stage" />
+      <TextArea fx:id="contenu" layoutX="141.0" layoutY="232.0" prefHeight="200.0" prefWidth="539.0" promptText="Bla bla bla bla..." />
+      <Label layoutX="22.0" layoutY="177.0" text="Objet :" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="229.0" text="Contenu:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="envoyea" layoutX="141.0" layoutY="126.0" prefHeight="33.0" prefWidth="174.0" promptText="Foulen@gmail.com" />
+      <Label layoutX="22.0" layoutY="125.0" text="Envoyer à :" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="26.0" prefHeight="46.0" prefWidth="198.0" text="Envoyer Email" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

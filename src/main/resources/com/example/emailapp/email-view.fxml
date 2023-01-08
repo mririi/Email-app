@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="559.0" prefWidth="801.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.emailapp.EmailController">
+   <children>
+      <TableView fx:id="tab" onMouseClicked="#OnSet" prefHeight="442.0" prefWidth="186.0">
+        <columns>
+          <TableColumn fx:id="emailcol" prefWidth="199.20000612735748" text="Emails" />
+        </columns>
+      </TableView>
+      <Button fx:id="envoyerbtn" layoutX="31.0" layoutY="505.0" mnemonicParsing="false" onAction="#onClickbtn" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #0D7377;" text="Envoyer un email" textFill="WHITE" />
+      <Button fx:id="refreshbtn" layoutX="31.0" layoutY="451.0" mnemonicParsing="false" onAction="#onRefreshbtn" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #0D7377;" text="Actualiser" textFill="WHITE" />
+      <Label fx:id="objet" layoutX="212.0" layoutY="56.0" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Text fx:id="contenu" fill="WHITE" layoutX="212.0" layoutY="125.0" lineSpacing="15.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="564.589599609375" />
+      <Label fx:id="envoyepar" layoutX="219.0" layoutY="11.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="730.0" layoutY="13.0" textFill="WHITE" />
+   </children>
+</AnchorPane>
